@@ -14,6 +14,30 @@ function setBackgroundById(elementId){
     background.classList.add('bg-orange-400')
 }
 
+function removeBackgroundById(elementId){
+    const background =document.getElementById(elementId);
+    background.classList.remove('bg-orange-400')
+}
+
+// ----------------
+function getTextElementVakueById(elementId){
+    const element = document.getElementById(elementId)
+    const elementValueText = element.innerText;
+    const value = parseInt(elementValueText);
+    return value;
+}
+
+function setTextElementValueById (elementId, value){
+    const element = document.getElementById(elementId);
+      element.innerText = value;
+}
+
+function getElementTextById(elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+}
+
 function getRandomAlphabet(){
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
     const alphabets = alphabetString.split('');
